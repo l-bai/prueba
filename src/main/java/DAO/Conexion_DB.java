@@ -21,9 +21,15 @@ public class Conexion_DB {
         try{
             //registro del driver
             String driver = "com.mysql.cj.jdbc.Driver";
-            String jdbcUrl = "jdbc:mysql://localhost:3306/gestor_huerto";
-            String usuario = "root";
-            String pass = "";
+//            String jdbcUrl = "jdbc:mysql://localhost:3306/gestor_huerto";
+//            String usuario = "root";
+//            String pass = "";
+            
+
+//CLEARDB_DATABASE_URL: mysql://b6ff450bbaa697:6a1841f4@eu-cdbr-west-01.cleardb.com/heroku_fa70ba55ea47e5e?reconnect=true
+            String jdbcUrl = "jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_fa70ba55ea47e5e";
+            String usuario = "b6ff450bbaa697";
+            String pass = "6a1841f4";
             
             //Class.forName(driver).newInstance();
             Class.forName(driver);
